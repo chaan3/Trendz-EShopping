@@ -19,7 +19,7 @@ const commonFeatureRouter = require("./routes/common/feature-routes");
 //create a separate file for this and then import/use that file here
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/E-commerce",{
+  .connect("mongodb+srv://Root:<db_password>@cluster0.ejw6x.mongodb.net/E-commerce",{
     useNewUrlParser: true,
     useUnifiedTopology: true,
 

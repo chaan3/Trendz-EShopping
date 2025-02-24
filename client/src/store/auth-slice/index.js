@@ -12,7 +12,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://trendz-eshopping-backend.onrender.com/api/auth/register",
+      "https://trendz-eshopping-backend.onrender.com/auth/register",
       formData,
       {
         withCredentials: true,
@@ -44,7 +44,7 @@ export const logoutUser = createAsyncThunk(
 
   async () => {
     const response = await axios.post(
-      "https://trendz-eshopping-backend.onrender.com/api/auth/logout",
+      "https://trendz-eshopping-backend.onrender.com/auth/logout",
       {},
       {
         withCredentials: true,
@@ -60,7 +60,7 @@ export const checkAuth = createAsyncThunk(
 
   async () => {
     const response = await axios.get(
-      "https://trendz-eshopping-backend.onrender.com/api/auth/check-auth",
+      "https://trendz-eshopping-backend.onrender.com/auth/check-auth",
       {
         withCredentials: true,
         headers: {

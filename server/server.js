@@ -22,9 +22,9 @@ mongoose.set('bufferCommands', false);
 
 
 mongoose
-  .connect("mongodb+srv://root:root@hotelcluster.4dn5z.mongodb.net/Trendz",{
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+  .connect("mongodb://localhost:27017/Trendz",{
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true,
     serverSelectionTimeoutMS: 30000 
 
   })
@@ -36,7 +36,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: "https://trendz-e3xr.onrender.com",
+    origin: "http://localhost:5173",
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
       "Content-Type",

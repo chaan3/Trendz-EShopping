@@ -11,7 +11,7 @@ const About = () => (
   
       {/* Image Section */}
       <div className="mt-8 flex justify-center">
-        <img src="src/assets/banner-3.webp" alt="Fashion" onClick={()=>window.location.href="/auth/login"}  className="rounded-lg shadow-lg w-full max-w-3xl" />
+        <img src="assets/banner-3.webp" alt="Fashion" onClick={()=>window.location.href="/auth/login"}  className="rounded-lg shadow-lg w-full max-w-3xl" />
       </div>
   
       {/* Mission Statement */}

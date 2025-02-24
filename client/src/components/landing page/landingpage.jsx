@@ -157,7 +157,7 @@ const Products = () => (
        
       ].map((image, index) => (
         <div key={index} className="bg-gray-100 p-4 rounded-lg w-80 h-80">
-          <img src={`src/assets/Men/${image}`} alt={`Fashion Item ${index + 1}`} className="rounded-lg w-full h-48 object-cover" />
+          <img src={`assets/Men/${image}`} alt={`Fashion Item ${index + 1}`} className="rounded-lg w-full h-48 object-cover" />
           <h3 className="text-lg font-semibold mt-2">Fashion Item {index + 1}</h3>
           <p className="text-gray-600">$49.99</p>
           <button onClick={()=>{window.location.href="/auth/login"}} className="mt-2 px-4 py-2 bg-gray-900 text-white rounded">Buy Now</button>

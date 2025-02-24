@@ -22,7 +22,8 @@ mongoose.set('bufferCommands', false);
 
 
 mongoose
-  .connect("mongodb://localhost:27017/Trendz",{
+  // .connect("mongodb://127.0.0.1:27017/Trendz",{
+    .connect("mongodb+srv://root:root@hotelcluster.4dn5z.mongodb.net/Trendz",{
     // useNewUrlParser: true,
     // useUnifiedTopology: true,
     serverSelectionTimeoutMS: 30000 
@@ -32,7 +33,7 @@ mongoose
   .catch((error) => console.log(error));
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT ||5000;
 
 app.use(
   cors({

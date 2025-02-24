@@ -41,11 +41,11 @@ const brandsWithIcon = [
 
 const Home = () => {
     const slides = [
-      "src/assets/banner/banner1.jpg",
-      "src/assets/banner/banner2.jpg",
+      "assets/banner/banner1.jpg",
+      "assets/banner/banner2.jpg",
       
-      "src/assets/banner/banner4.jpg",
-      "src/assets/banner/banner5.jpg",
+      "assets/banner/banner4.jpg",
+      "assets/banner/banner5.jpg",
     
     ];
     const [currentSlide, setCurrentSlide] = useState(0);

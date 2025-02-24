@@ -28,7 +28,7 @@ export const loginUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://trendz-eshopping-backend.onrender.com/api/auth/login",
+      "https://trendz-eshopping-backend.onrender.com/auth/login",
       formData,
       {
         withCredentials: true,

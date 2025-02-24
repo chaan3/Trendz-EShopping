@@ -17,11 +17,15 @@ const commonFeatureRouter = require("./routes/common/feature-routes");
 
 //create a database connection -> u can also
 //create a separate file for this and then import/use that file here
+//buffer
+mongoose.set('bufferCommands', false);
+
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/E-commerce",{
-    // useNewUrlParser: true,
-    // useUnifiedTopology: true,
+  .connect("mongodb+srv://root:root@hotelcluster.4dn5z.mongodb.net/Trendz",{
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 30000 
 
   })
   .then(() => console.log("MongoDB connected"))

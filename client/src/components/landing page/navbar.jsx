@@ -21,8 +21,8 @@ const Navbar = () => {
             </ul>
             {/* Icons - Only for larger screens */}
             <div className="hidden md:flex flex-row space-x-4">
-                <a href="/auth/login" className="flex p-1 bg-black/20 rounded-lg hover:bg-slate-900">Login <span><TbLogin className="mt-1 ml-1"/></span></a>
-                <a href="/auth/login" className="flex p-1 bg-black/20 rounded-lg hover:bg-slate-900">Shop <span><FaShoppingCart className="mt-1 ml-1"/></span></a>
+                <a href="auth/login" className="flex p-1 bg-black/20 rounded-lg hover:bg-slate-900">Login <span><TbLogin className="mt-1 ml-1"/></span></a>
+                <a href="auth/login" className="flex p-1 bg-black/20 rounded-lg hover:bg-slate-900">Shop <span><FaShoppingCart className="mt-1 ml-1"/></span></a>
             </div>
 
 

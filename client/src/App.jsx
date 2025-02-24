@@ -41,12 +41,12 @@ function App() {
   return (
     <div className="flex flex-col overflow-hidden bg-white">
       <Routes>
-        <Route
+        {/* <Route
           path="/"
           element={
             <Landinglayout/>  
           }
-        />
+        /> */}
         <Route
           path="/auth"
           element={

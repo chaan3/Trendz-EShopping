@@ -60,7 +60,7 @@ export const checkAuth = createAsyncThunk(
 
   async () => {
     const response = await axios.get(
-      "https://render.com/docs/web-services#port-binding/api/auth/check-auth",
+      "https://trendz-eshopping-bs.onrender.com:10000/api/auth/check-auth",
       {
         withCredentials: true,
         headers: {

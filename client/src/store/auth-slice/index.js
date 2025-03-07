@@ -8,7 +8,7 @@ const initialState = {
 };
 
 export const registerUser = createAsyncThunk(
-  "/auth/register",
+  "auth/register",
 
   async (formData) => {
     const response = await axios.post(
@@ -24,7 +24,7 @@ export const registerUser = createAsyncThunk(
 );
 
 export const loginUser = createAsyncThunk(
-  "/auth/login",
+  "auth/login",
 
   async (formData) => {
     const response = await axios.post(

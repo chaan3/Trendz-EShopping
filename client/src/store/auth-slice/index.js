@@ -12,7 +12,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "http://localhost:5000/api/auth/register",
+      "https://trendz-eshopping-bs.onrender.com:10000/api/auth/register",
       formData,
       {
         withCredentials: true,
@@ -40,11 +40,11 @@ export const loginUser = createAsyncThunk(
 );
 
 export const logoutUser = createAsyncThunk(
-  "/auth/logout",
+  "auth/logout",
 
   async () => {
     const response = await axios.post(
-      "http://localhost:5000/api/auth/logout",
+      "https://trendz-eshopping-bs.onrender.com:10000/api/auth/logout",
       {},
       {
         withCredentials: true,
@@ -56,11 +56,11 @@ export const logoutUser = createAsyncThunk(
 );
 
 export const checkAuth = createAsyncThunk(
-  "/auth/checkauth",
+  "auth/checkauth",
 
   async () => {
     const response = await axios.get(
-      "http://localhost:5000/api/auth/check-auth",
+      "https://trendz-eshopping-bs.onrender.com:10000/api/auth/check-auth",
       {
         withCredentials: true,
         headers: {

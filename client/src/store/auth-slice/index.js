@@ -28,7 +28,7 @@ export const loginUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://hotel-accounts-maintain-bs.onrender.com/api/auth/login",
+      "http://localhost:10000/api/auth/login",
       formData,
       {
         withCredentials: true,
